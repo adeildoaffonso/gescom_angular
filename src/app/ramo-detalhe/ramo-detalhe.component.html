@@ -1,0 +1,9 @@
+<div *ngIf="ramo">
+  <h2>{{ramo.descricao | uppercase}} Detalhes</h2>
+  <div><span>Código: </span>{{ramo.codigo}}</div>
+  <div>
+    <label>Descrição:
+      <input [(ngModel)]="ramo.descricao" placeholder="descricao"/>
+    </label>
+  </div>
+</div>

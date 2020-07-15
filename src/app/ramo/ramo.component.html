@@ -1,0 +1,12 @@
+<h3>Detalhes do Ramo</h3>
+
+<h2>Meus Ramos</h2>
+<ul class="ramos">
+  <li *ngFor="let ramo of allRamos | async">
+    <a routerLink="/detalheRamo/{{ramo.codigo}}">
+      <span class="badge">{{ramo.codigo}}</span> {{ramo.descricao}}
+    </a>
+  </li>
+</ul>
+
+

@@ -1,0 +1,7 @@
+<h3>AGENCIADORES</h3>
+
+<ul class="ramos">
+  <li *ngFor="let agenciador of allAgenciador | async">
+    <span class="badge">{{agenciador.agenciador_id}}</span> {{agenciador.pessoa_id}}
+  </li>
+</ul>
